@@ -1,0 +1,31 @@
+[
+    {
+        "class": "isolina",
+        "school": "E.E. Isolina França Soares Torres",
+        "image": "",
+        "course": "Ensino Médio Completo - 2020 a 2022"
+    },
+    {
+        "class": "microlins",
+        "school": "Microlins",
+        "image": "./assets/img/microlins.png",
+        "course": "Analista em Hardware (244 Horas) - 2020",
+        "description": "Técnico em manutenção de Desktops, Notebooks, Redes e Cabeamento Estruturado"
+        
+    },
+    {
+        "class": "descomplica",
+        "school": "Descomplica Faculdade Digital",
+        "image": "./assets/img/descomplica.png",
+        "course": "Analise e Desenvolvimento de Sistemas - Cursando",
+        "description": "Ensino Superior Incompleto 2023 - 2026"
+    },
+    {
+        "class": "udemy",
+        "school": "Udemy",
+        "image": "./assets/img/udemy.png",
+        "course": "Curso Web Moderno Com JavaScript + Projetos - Cursando",
+        "description": "Logica de Programação, JavaScript, Node.js, ESNext, HTML5, CSS3, DOM, Ajax, Webpack, Jquery, Bootstrap, React, Next, VueJS, Banco de Dados Relacional e Não Relacional e Express"
+    }  
+]
+    

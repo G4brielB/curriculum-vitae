@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+    font-size: 1.1em;
+    margin-top: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: #0044ffaa;
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+.header{
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.name-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+
+}
+
+.perfil-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.header h1{
+    font-size: 4em;
+}
+
+.center{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.arrow-drop{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow-drop-experience{
+    cursor: pointer;
+}
+
+.arrow-inverter{
+    transform: rotate(180deg);
+}
+
+
+/*Animação seta cabeçalho*/
+
+.flutuante {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*fim*/
+
+.about-me, .epoca-experience, .project-experience {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+.about-me.show {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Resolver essa gambiarra posteriormente*/
+
+.show {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aside-about-me, .aside-history {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.section-about-me, .section-epoca-experience, .section-project-experience{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.section-about-me p, .section-epoca-experience p, .section-project-experience p{
+    width: 50vw;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    align-items: center;
+}
+
+.ti-img, .board-img{
+    object-fit: cover;
+    width: 25vw;
+    height: 35vh;
+}
+
+
+.section-history{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-history p {
+    width: 50vw;
+    font-size: 1.2em;
+
+}
+
+
+
+.identado{
+    margin-left: 30px;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #00000055;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-list li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-info {
+    width: 45vw;
+}
+
+.main-content{
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-content h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+.isolina, .descomplica, .microlins, .udemy{
+    margin-top: 60px;
+    transition: 0.1s ease-in-out;
+}
+
+.grow-letter:hover{
+    transform: scale(1.1);
+    padding-left: 80px;
+}
+
+
+.descomplica h3, .microlins h3, .udemy h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    margin: 60px 0px 20px 0px;
+}
+
+.section-content{
+    margin: 20px;
+}
+
+.arrow-drop-experience{
+    margin-top: 20px;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2em;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #646464;
+    padding: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .name-info {
+        flex-direction: column;
+        padding: 0;
+        font-size: 0.6em;
+    }
+
+    .perfil-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .section-about-me, .section-epoca-experience, .section-project-experience, .section-history {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .section-about-me p, .section-epoca-experience p, .section-project-experience p {
+        width: 90vw;
+    }
+
+    .ti-img, .board-img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aside-info{
+        text-align: center;
+        width: 100vw;
+    }
+
+}
